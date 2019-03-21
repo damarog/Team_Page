@@ -1,0 +1,159 @@
+
+@media (max-width: 768px) {
+	
+	.header {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.header__left {
+		width: 100%;
+		min-height: 250px;
+		height: 50vh;
+	}
+	
+	.header__right {
+		width: 100%;
+		min-height: 250px;
+		height: 50vh;
+	}
+	
+	.header__center {
+		font-size: 0.8rem;
+		color: green;
+		margin: 0px 10px;
+		position: relative;
+	}
+	
+	.header__center span {
+		color: blue;
+	}
+
+	.creative {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	
+	.creative-image {
+		height: 50vh;
+		min-height: 200px;
+	}
+	
+	.projects {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	
+	.projects__left {
+		height: 50px;
+	}
+	
+	.projects__text {
+		height: 150px;
+		color: black;
+		text-align: center;
+	}
+	
+	.projects__center {
+		min-height: 400px;
+	}
+	
+	.projects__right {
+		min-height: 250px;
+		height: 50vh;
+	}
+	
+	.our-project {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	
+	[class^="our-project__img"] {
+		display: flex;
+		height: 80px;
+		border: 5px solid black;
+		background: linear-gradient(to right top, blue, yellow);
+	}
+	
+	[class^="our-project__img"] p, [class^="our-project__img"] i {
+		display: flex;
+		margin-top: 5px;
+	}
+		
+	.our-project__symbol {
+		width: 100%;
+	}
+	
+	.team {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+	
+	.team__pictures {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+	}
+	
+	[class^="team__pictures-"] {
+		width: 300px;
+		height: 300px;
+	}
+	
+	.blog {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+	
+	.touch {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+	
+	.header {
+		height: 400px;
+	}
+	
+	.creative {
+		height: 500px;
+		grid-template-rows: 5px 50px 200px 150px;
+	}
+	
+	.projects {
+		height: 500px;
+		grid-template-rows: 50px 250px 200px;
+	}
+	
+	.our-project {
+		height: 600px;
+		grid: 15% 25% 9% 2% 49% / 5% 22% 23% 24% 2% 24%;
+	}
+	
+	.team {
+		height: 500px;
+	}
+	
+	.blog {
+		height: 600px;
+	}
+	
+	.touch {
+		height: 450px;
+	}
+	
+}
